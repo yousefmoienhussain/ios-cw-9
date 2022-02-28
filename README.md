@@ -13,7 +13,7 @@
 
 
 
-```bash
+```swift
 var names = ["Sara", "fahad", "ali", "fatima"]
 ```
 
