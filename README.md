@@ -61,11 +61,7 @@
 
 
 <p dir="rtl">
-
-
-
-
-<img src="/UI2.png" width="200" alt="alt_text" title="image_tooltip">
+<img src="/grade.gif" width="200" alt="alt_text" title="image_tooltip">
 </p>
 
 
