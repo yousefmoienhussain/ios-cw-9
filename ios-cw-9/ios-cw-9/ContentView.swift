@@ -39,9 +39,12 @@ struct ContentView: View {
                         // if statement
                         // here يجب أن تتغير الصورة على حسب الدرجة
                         // image : الصور موجودة في assets
-                        
+                        if (Double(enterGrade) ?? 0) >= 90 { grade = "a"
+                        } else if (Double(enterGrade) ?? 0) >= 80 { grade = "b"
+                        }  else if (Double(enterGrade) ?? 0)  >= 70 { grade = "c"
+                        }    else if (Double(enterGrade) ?? 0) >= 60 { grade = "d"
+                        }else if (Double(enterGrade) ?? 0) <= 60 { grade = "e"}
                     }
-                
                 Text("لقد حصلت على درجة")
                     .bold()
                     .foregroundColor(Color(#colorLiteral(red: 0.07661154121, green: 0.1822937131, blue: 0.2113724947, alpha: 1)))
@@ -56,9 +59,9 @@ struct ContentView: View {
         }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
